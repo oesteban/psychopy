@@ -180,7 +180,7 @@ class PygletBackend(BaseBackend):
                 win.multiSample = False
 
         if platform.system() == 'Linux':
-            display = pyglet.canvas.Display(x_screen=win.screen)
+            display = pyglet.canvas.Display()
             allScrs = display.get_screens()
         else:
             if pyglet.version < '1.4':
